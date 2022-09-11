@@ -156,7 +156,7 @@ node to node. For unidirectional rings, if one node fails, the network fails.
 - Mesh Topology: Nodes are connected to one another offering multiple paths. If node
 breaks down, then data passing changes its route. It is expensive
 
-![img](https://github.com/c0st/C/blob/main/Drawables/network.png)
+![img](https://github.com/c0st/C/blob/main/Drawables/network.jpg)
 
 #
 
