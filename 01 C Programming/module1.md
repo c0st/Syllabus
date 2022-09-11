@@ -10,6 +10,8 @@
 - A word is a group of 4 bytes
 - A nibble is a group of 4 bits
 
+****
+
 Storage | Bits
 -- | --
 1 Byte | 8
@@ -22,9 +24,9 @@ Storage | Bits
 
 **CPU**
 
-- CPU is the part of the computer that performs the basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in a computer program
+![CPU Architecture](https://github.com/c0st/C/blob/main/Drawables/cpu.png)
 
-![img](https://github.com/c0st/C/blob/main/Drawables/cpu.png)
+- CPU is the part of the computer that performs the basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in a computer program
 
 - ALU is a “super calculator” carrying out all arithmetic tasks and Boolean operations
 - CU controls the way data is moved between the various components of computer
@@ -34,24 +36,23 @@ Storage | Bits
 
 **Memory**
 
-RAM (Random Access Memory)
-- Static and Dynamic RAM
+#### RAM (Random Access Memory)
 
-SRAM (Static RAM)
+**SRAM (Static RAM)**
 - SRAM is a type of memory that retains its data even when the power is turned off. It is faster than DRAM, but more expensive and uses more power
 - SRAM is used in CPU cache, memory-mapped I/O
 
-DRAM (Dynamic RAM)
+**DRAM (Dynamic RAM)**
 - DRAM is a type of memory that loses its data when the power is turned off. It is slower than SRAM, but cheaper and uses less power
 - DRAM is used in main memory, video memory
 
-ROM (Read Only Memory)
+#### ROM (Read Only Memory)
 - ROM is a type of memory that retains its data even when the power is turned off. It is used to store the BIOS and other firmware
 - PROM (Programmable ROM) is a type of ROM that can be programmed once
 - EPROM (Erasable Programmable Read Only Memory) is a type of ROM that can be erased and reprogrammed once
 - EEPROM (Electrically Erasable Programmable Read Only Memory) is a type of ROM that can be erased and reprogrammed many times
 
-Cache Memory
+#### Cache Memory
 - It holds those portions of program that are frequently used by CPU
 It acts as a buffer between CPU and RAM. The CPU first looks for the instructions in cache.
 It executes faster than RAM, expensive and limited in size. It has multiple levels:
@@ -188,4 +189,153 @@ System software can run independently. It provides platform for running applicat
 compiler, assembler, debugger, driver | word processor, web browser, media player
 
 
-### Chapter 2
+### Chapter 2 Overview of C
+
+**Psuedo Code**
+
+Pseudocode is a detailed yet readable description of what a computer program or algorithm must do, expressed in a formally-styled natural language rather than in a programming language. Pseudocode often uses structural conventions of a normal programming language, but is intended for human reading rather than machine reading.
+
+**Tokens**
+
+A token is a sequence of characters that are meaningful to the compiler. Tokens are the smallest meaningful units of a program. Tokens are classified into various categories such as identifiers, keywords, operators, separators, literals, etc.
+
+**Operators**
+
+Operators are special symbols that represent computations like addition, multiplication, and division. The values the operator works on are called operands.
+
+**Arithmetic Operators**
+
+Operator | Description
+-- | --
+\+ | Addition
+\- | Subtraction
+\* | Multiplication
+/ | Division
+% | Modulus
+++ | Increment
+-- | Decrement
+
+**Relational Operators**
+
+Operator | Description
+-- | --
+== | Equal to
+!= | Not equal to
+\> | Greater than
+< | Less than
+\>= | Greater than or equal to
+<= | Less than or equal to
+
+**Logical Operators**
+
+Operator | Description
+-- | --
+&& | Logical AND
+\|\| | Logical OR
+! | Logical NOT
+
+**Assignment Operators**
+
+Operator | Description
+-- | --
+= | Simple assignment
++= | Add AND assignment
+-= | Subtract AND assignment
+*= | Multiply AND assignment
+/= | Divide AND assignment
+%= | Modulus AND assignment
+
+**Increment / Decrement operators**
+
+Operator | Description
+-- | --
+++ | Increment
+-- | Decrement
+
+**Bitwise Operators**
+
+Operator | Description
+-- | --
+& | Bitwise AND
+\| | Bitwise OR
+^ | Bitwise XOR
+~ | Bitwise compliment
+<< | Left shift
+\>\> | Right shift
+
+**Conditional operator**
+**expression1 ? expression2 : expression3**
+
+If expression1 is true, then expression2 is evaluated and becomes the result of the entire conditional expression. If expression1 is false, then expression3 is evaluated and becomes the result of the entire conditional expression.
+
+**Special operator**
+
+Operator | Description
+-- | --
+sizeof | Returns the size of a variable
+& | Returns the address of a variable
+\* | Pointer to a variable
+?: | Conditional operator
+, | Comma operator
+
+****
+
+```
+c = (a , b);
+>> c = b
+c = a , b;
+>> c = a
+```
+
+**Precedence**
+
+
+Operator | Description
+-- | --
+\[\] | Array subscript
+\(\) | Function call
+. | Structure member
+\-\> | Structure pointer member
+\+\+ | Increment
+\-\- | Decrement
+\~ | Bitwise complement
+! | Logical complement
+\* | Multiply
+/ | Divide
+% | Modulus
+\+ | Add
+\- | Subtract
+<< | Left shift
+\>\> | Right shift
+< | Less than
+\> | Greater than
+<= | Less than or equal to
+\>= | Greater than or equal to
+== | Equal to
+!= | Not equal to
+& | Bitwise AND
+^ | Bitwise XOR
+\| | Bitwise OR
+&& | Logical AND
+\|\| | Logical OR
+?: | Conditional
+= | Assignment
+\+= | Add and assignment
+\-= | Subtract and assignment
+\*= | Multiply and assignment
+/= | Divide and assignment
+%= | Modulus and assignment
+<<= | Left shift and assignment
+\>\>= | Right shift and assignment
+&= | Bitwise AND and assignment
+^= | Bitwise XOR and assignment
+\|= | Bitwise OR and assignment
+
+**Tips for Programming Errors**
+
+1. Avoid division by zero errors whenever arithmetic expressions are evaluated
+2. Use parentheses whenever complex expressions with operators of various Precedence and
+Associativity are used
+3. Be careful while using increment decrement operators
+4. Never give space between relational operators < = , > = , ! = etc.
+5. Increment/ decrement operators do not work with floating point numbers.
