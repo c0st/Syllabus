@@ -28,7 +28,7 @@ Storage | Bits
 
 - CPU is the part of the computer that performs the basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in a computer program
 
-- ALU is a “super calculator” carrying out all arithmetic tasks and Boolean operations
+- `ALU` is a “super calculator” carrying out all arithmetic tasks and Boolean operations
 - CU controls the way data is moved between the various components of computer
 - Both ALU and CU use the service of clock for synchronizing their operations
 - All program instructions are executed using the fetch-decode-execute mechanism. An instruction is first fetched from memory, decoded and then executed by CPU. The CPU can execute one instruction in one clock pulse
@@ -48,9 +48,9 @@ Storage | Bits
 
 #### ROM (Read Only Memory)
 - ROM is a type of memory that retains its data even when the power is turned off. It is used to store the BIOS and other firmware
-- PROM (Programmable ROM) is a type of ROM that can be programmed once
-- EPROM (Erasable Programmable Read Only Memory) is a type of ROM that can be erased and reprogrammed once
-- EEPROM (Electrically Erasable Programmable Read Only Memory) is a type of ROM that can be erased and reprogrammed many times
+- `PROM` (Programmable ROM) is a type of ROM that can be programmed once
+- `EPROM` (Erasable Programmable Read Only Memory) is a type of ROM that can be erased and reprogrammed once
+- `EEPROM` (Electrically Erasable Programmable Read Only Memory) is a type of ROM that can be erased and reprogrammed many times
 
 #### Cache Memory
 - It holds those portions of program that are frequently used by CPU
@@ -175,8 +175,8 @@ meters. It connects small devices like phones, laptops through Bluetooth
 
 #
 
-The Internet is the set of all networks which are interconnected and interoperate using the IETF standard protocols
-An internet (lowercase-i) is any network of devices which can communicate with each other
+The `Internet` is the set of all networks which are interconnected and interoperate using the IETF standard protocols
+An `internet` (lowercase-i) is any network of devices which can communicate with each other
 
 **Software**
 
@@ -264,9 +264,10 @@ Operator | Description
 \>\> | Right shift
 
 **Conditional operator**
+
 **expression1 ? expression2 : expression3**
 
-If expression1 is true, then expression2 is evaluated and becomes the result of the entire conditional expression. If expression1 is false, then expression3 is evaluated and becomes the result of the entire conditional expression.
+If expression1 is `true`, then `expression2` is evaluated and becomes the result of the entire conditional expression. If expression1 is `false`, then `expression3` is evaluated and becomes the result of the entire conditional expression.
 
 **Special operator**
 
