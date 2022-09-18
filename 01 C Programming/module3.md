@@ -83,3 +83,16 @@ char name1[] = “hello”;
 char name2[10];
 name2=name1; /* This initialization is invalid */
 ```
+
+**String Functions**
+
+The following are some of the commonly used string functions:
+
+- strcpy() - Copies one string to another
+- strcat() - Concatenates two strings
+- strlen() - Returns the length of a string
+- strcmp() - Compares two strings
+- strrev() - Reverses a string
+- strlwr() - Converts a string to lowercase
+- strupr() - Converts a string to uppercase
+
